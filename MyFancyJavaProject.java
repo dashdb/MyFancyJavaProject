@@ -1,8 +1,11 @@
 public class Main {
   int x = 5;
+  private static Singleton myObj;
+  
+  private Singleton() {}
 
-  public static void main(String[] args) {
-    Main myObj = new Main();
+  public static Singleton getInstance() {
+    myObj = new Singleton();
     System.out.println(myObj.x);
   }
 }
