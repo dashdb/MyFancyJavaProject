@@ -6,6 +6,6 @@ public class Main {
 
   public static Singleton getInstance() {
     myObj = new Singleton();
-    System.out.println(myObj.x);
+    System.out.println("Changed " + myObj.x);
   }
 }
